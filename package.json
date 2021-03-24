@@ -7,5 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan D. B. Van Schenck",
+  "url" : "https://github.com/jonathanvanschenck/xkcd-colors",
+  "email" : "jvschenck@novadynamics.com",
   "license": "MIT"
 }

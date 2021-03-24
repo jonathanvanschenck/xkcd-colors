@@ -47,3 +47,6 @@ in the format:
 # TODO
  - Add `get_nearest` color function
  - Add API documentation
+
+# Development
+Check this package out on [github](https://github.com/jonathanvanschenck/xkcd-colors)! Feel free to submit feature requests and PRs.
