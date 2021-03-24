@@ -31,13 +31,13 @@ const { colors } = require("xkcd-colors");
 in the format:
 ```json
 [
-    "..." : " Many others",
+    "..." : "Many others",
     {
-        "name" : "str : color name"
-        "clean_name" : "str : name without non-alphabetical characters",
-        "hex" : "str : the 32-bit color hex code color: `#aaaaaa`",
-        "rgb" : "int[] : list of the 0-255 ints for red green and blue",
-        "rgbf" : "float[] : list of 0.0-1.0 floats for red green and blue"
+        "name"        :  "str      : color name",
+        "clean_name"  :  "str      : name without non-alphabetical characters",
+        "hex"         :  "str      : the 32-bit color hex code color: `#aaaaaa`",
+        "rgb"         :  "int[3]   : list of the 0-255 ints for red green and blue",
+        "rgbf"        :  "float[3] : list of 0.0-1.0 floats for red green and blue"
     },
     "..." : "Many others"
 ]
