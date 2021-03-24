@@ -23,28 +23,42 @@ Names can also be given as just alphabetical characters (no spaces or slashes or
 get_color("robinsegg") // '#6dedfd'
 ```
 
+## CSS
+Provided also is a css file which will expose the xkcd-colors in css. If you
+load this [css file](css/xkcd-colors.css) in your html header like:
+```html
+<link rel="stylesheet" type="text/css" href="path/to/xkcd-colors.css"/>
+```
+Then you can access the colors inside of other css files like:
+```css
+.my-html-class {
+  background-color: var(--xkcd_darkblue);
+}
+```
+See [this example](tests/test_css.html).
 
-The full json objection of the xkcd colors is also exposed:
+
+
+## JSON
+The full json object of the xkcd colors is also exposed:
 ```js
 const { colors } = require("xkcd-colors");
 ```
-in the format:
+and can also be found in file form: [here](assets/colors.json). The format for
+each color is:
 ```json
-[
-    "..." : "Many others",
-    {
-        "name"        :  "str      : color name",
-        "clean_name"  :  "str      : name without non-alphabetical characters",
-        "hex"         :  "str      : the 32-bit color hex code color: `#aaaaaa`",
-        "rgb"         :  "int[3]   : list of the 0-255 ints for red green and blue",
-        "rgbf"        :  "float[3] : list of 0.0-1.0 floats for red green and blue"
-    },
-    "..." : "Many others"
-]
+{
+    "name"        :  "str      : color name",
+    "clean_name"  :  "str      : name without non-alphabetical characters",
+    "hex"         :  "str      : the 32-bit color hex code color: `#aaaaaa`",
+    "rgb"         :  "int[3]   : list of the 0-255 ints for red green and blue",
+    "rgbf"        :  "float[3] : list of 0.0-1.0 floats for red green and blue"
+}
 ```
 
 
 # TODO
+ - Add unit tests with mocha
  - Add `get_nearest` color function
  - Add API documentation
 
