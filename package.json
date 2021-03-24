@@ -1,13 +1,13 @@
 {
   "name": "xkcd-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A color pallette utility for xkcd colors",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan D. B. Van Schenck",
-  "url" : "https://github.com/jonathanvanschenck/xkcd-colors",
-  "email" : "jvschenck@novadynamics.com",
+  "url": "https://github.com/jonathanvanschenck/xkcd-colors",
+  "email": "jvschenck@novadynamics.com",
   "license": "MIT"
 }
